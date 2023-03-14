@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">#tip calculator</a>
+        </header>
+        <main>
+            <form>
+                <div>
+                    <label for="billTotal" class="label-group">Bill Total</label>
+                    <input type="text" name="Bill Total" id="billTotal" placeholder="$100" required class="input-group">
+                </div>
+                <div>
+                    <label for="tipPercent" class="label-group">Tip Percentage</label>
+                    <input type="text" name="Tip Percentage" id="tipPercent" placeholder="%" required class="input-group" >
+                </div>
+                <div class="dflex">
+                <div>
+                    <h2 class="noOfPeoples">No of Peoples</h2>
+                    <div class="noOfPeopleDiv">
+                    <button type="button" onclick="incrementValue()">+</button>
+                    <div id="noOfPeople">2</div>
+                    <button type="button" onclick="decrementValue()">-</button>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="total">Total per Person</h2>
+                    <div class="totalAmountDiv">
+                    <div id="totalAmount">$ 100</div>
+                    </div>
+                </div>
+                </div>
+                <button type="button" class="submitbtn" onclick="calculateBill()">Submit</button>
+            </form>
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
